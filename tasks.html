@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="memory.html">Memory Games</a>
+            <a href="notes.html">Notes</a>
+            <a href="roadmap.html">Road Map</a>
+            <a href="score.html">Score</a>
+            <a href="jurnal.html">Journal</a>
+        </nav>
+    </header>
+
+    <div class="container">
+    <h1>JavaScript Challenges</h1>
+    <p>Complete all tasks to prove your skills!</p>
+
+    <div class="card task-box" id="task-1">
+        <h3>1. Data Types & Variables</h3>
+        <p>Assign the number 2026 to a constant named <code>year</code>:</p>
+        <input type="text" id="ans-1" placeholder="const year = ...">
+    </div>
+
+    <div class="card task-box" id="task-2">
+        <h3>2. Loops & Conditionals</h3>
+        <p>What is the value of <code>res</code>? <br>
+        <code>let res = 0; for(let i=0; i<3; i++) { res += i; }</code></p>
+        <input type="number" id="ans-2" placeholder="Result">
+    </div>
+
+    <div class="card task-box" id="task-3">
+        <h3>3. Arrow Functions</h3>
+        <p>Convert this to an arrow function: <code>function(a){return a*2}</code></p>
+        <input type="text" id="ans-3" placeholder="(a) => ...">
+    </div>
+
+    <div class="card task-box" id="task-4">
+        <h3>4. DOM & Web APIs</h3>
+        <p>Which method is used to send a network request?</p>
+        <input type="text" id="ans-4" placeholder="f_ _ _ _">
+    </div>
+
+    <button onclick="TaskManager.checkAll()" style="width: 100%;">Check Answers</button>
+</div>
+
+<div class="score-badge">Score: <span id="total-score-val">0</span></div>
+
+<script src="app.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

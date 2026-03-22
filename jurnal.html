@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="notes.html">Notes</a>
+            <a href="memory.html">Memory Games</a>
+            <a href="tasks.html">Tasks</a>
+            <a href="roadmap.html">Road Map</a>
+            <a href="score.html">Score</a>
+        </nav>
+    </header>
+
+    <div class="container">
+    <h1>Daily Learning Journal</h1>
+    <p>Write what you learned today (at least 20 characters) to earn 30 XP!</p>
+
+    <div class="card">
+        <textarea id="journal-input" rows="5" placeholder="Today I learned how to use Arrow Functions and..."></textarea>
+        <button onclick="JournalManager.saveEntry()">Save Entry & Get XP</button>
+    </div>
+
+    <div id="journal-history">
+        <h3>Past Entries</h3>
+        <div id="entries-container"></div>
+    </div>
+</div>
+
+<div class="score-badge">Score: <span id="total-score-val">0</span></div>
+
+<script src="app.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

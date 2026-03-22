@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="roadmap.html">Road Map</a>
+            <a href="tasks.html">Tasks</a>
+            <a href="memory.html">Memory Games</a>
+            <a href="jurnal.html">Journal</a>
+            <a href="score.html">Score</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+    <h1 style="color: var(--accent);">Complete JavaScript Guide</h1>
+    <p>Study the code snippets below. Each part explains how JS works in real projects.</p>
+
+    <div class="card">
+        <h2>1. Variables & Data Types</h2>
+        <p><b>Goal:</b> How to store information (Strings, Numbers, Booleans).</p>
+        <pre>
+ // 'let' allows the value to change later
+ let score = 0; 
+
+ // 'const' is for values that never change
+ const playerName = "Alex"; 
+
+ // Data Types:
+ let isGameOver = false; // Boolean (True/False)
+ let items = ["Sword", "Shield"]; // Array (List of items)
+ let playerStats = { hp: 100, mp: 50 }; // Object (Complex data)
+        </pre>
+        <p><i>Note: Use <b>const</b> by default, and <b>let</b> only if you know the value will change.</i></p>
+        <button onclick="NotesManager.markAsLearnt(event, 'Variables', 10)">I understand this</button>
+    </div>
+
+    <div class="card">
+        <h2>2. Conditionals (If/Else)</h2>
+        <p><b>Goal:</b> Making decisions in code.</p>
+        <pre>
+ if (score >= 100) {
+    console.log("Level Up!"); // Runs if condition is true
+ } else {
+    console.log("Keep playing..."); // Runs if condition is false
+ }
+        </pre>
+        <p><i>Note: <b>Conditionals</b> are the "brain" of your app—they decide what happens next.</i></p>
+        <button onclick="NotesManager.markAsLearnt('Variables', 10)">I understand this</button>
+    </div>
+
+    <div class="card">
+        <h2>3. Loops (Repeat Actions)</h2>
+        <p><b>Goal:</b> To run the same code many times without typing it again.</p>
+        <pre>
+ // Start at 0; Run while i < 5; Add 1 each time
+ for (let i = 0; i < 5; i++) {
+    console.log("Current number is: " + i);
+}
+        </pre>
+        <p><i>Note: <b>Loops</b> save time when dealing with lists (Arrays) or repeating tasks.</i></p>
+        <button onclick="NotesManager.markAsLearnt('Variables', 10)">I understand this</button>
+    </div>
+
+    <div class="card">
+        <h2>4. Functions (Reusable Code)</h2>
+        <p><b>Goal:</b> Create a "package" of code that you can call anytime.</p>
+        <pre>
+ // Classic Function
+ function multiply(a, b) {
+    return a * b;
+ }
+
+  // Modern Arrow Function (Shorter syntax)
+  const add = (a, b) => a + b;
+
+  console.log(add(5, 10)); // Output: 15
+        </pre>
+        <p><i>Note: <b>Arrow functions</b> are the modern way to write functions in JS (ES6+).</i></p>
+        <button onclick="NotesManager.markAsLearnt('Variables', 10)">I understand this</button>
+    </div>
+
+    <div class="card">
+        <h2>5. DOM & Web APIs</h2>
+        <p><b>Goal:</b> Connect JS to HTML and the Internet.</p>
+        <pre>
+ // DOM: Changing HTML content
+ document.getElementById("title").innerText = "New Title!";
+
+ // Web API: Getting data from a server (Fetch)
+ fetch("https://api.example.com/data")
+    .then(response => response.json())
+    .then(data => console.log(data));
+        </pre>
+        <p><i>Note: The <b>DOM</b> makes websites interactive. <b>APIs</b> allow your site to talk to other services.</i></p>
+        <button onclick="NotesManager.markAsLearnt('Variables', 10)">I understand this</button>
+    </div>
+   <button onclick="GameState.addScore(50, 'Notes Mastery')">I have studied everything! (+50 Score)</button>
+</div>
+
+<div class="score-badge">Score: <span id="total-score-val">0</span></div>
+
+<script src="app.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

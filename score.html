@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="memory.html">Memory Games</a>
+            <a href="jurnal.html">Journal</a>
+            <a href="tasks.html">Tasks</a>
+            <a href="notes.html">Notes</a>
+            <a href="roadmap.html">Road Map</a>
+        </nav>
+    </header>
+
+    <div class="container">
+    <h1>Performance Dashboard</h1>
+    
+    <div class="card" style="text-align: center; padding: 50px 20px;">
+        <h2 style="margin: 0; font-size: 1.5rem; color: var(--text-color);">Total Experience</h2>
+        <div id="big-score" style="font-size: 5rem; font-weight: bold; color: var(--accent);">0</div>
+        <p>XP Points Collected</p>
+    </div>
+
+    <div class="card">
+        <h3>Mastered Topics</h3>
+        <ul id="topics-list" style="list-style: none; padding: 0;">
+            </ul>
+    </div>
+
+    <button onclick="ScoreManager.resetGame()" style="background: var(--error); color: white;">Reset All Progress</button>
+</div>
+
+<script src="app.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

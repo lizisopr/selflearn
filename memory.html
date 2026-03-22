@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="tasks.html">Tasks</a>
+            <a href="jurnal.html">Journal</a>
+            <a href="notes.html">Notes</a>
+            <a href="score.html">Score</a>
+            <a href="roadmap.html">Road Map</a>
+        </nav>
+    </header>
+    
+<div class="container">
+    <h1>JS Code Memory Challenge</h1>
+    <div class="card" id="quiz-container">
+        <div id="question-area">
+            <h3 id="question-text">Press Start to Begin</h3>
+            <pre><code id="code-snippet"></code></pre>
+        </div>
+        
+        <div id="answer-area" style="display:none;">
+            <input type="text" id="user-answer" placeholder="Your answer...">
+            <button onclick="MemoryGame.submitAnswer()">Submit</button>
+        </div>
+        
+        <button id="start-btn" onclick="MemoryGame.start()">Start Game</button>
+        
+        <div id="result-stats" style="margin-top:20px; display:none;">
+            <p>Errors: <span id="error-count" style="color:var(--error)">0</span></p>
+            <p>Correct: <span id="correct-count" style="color:var(--success)">0</span></p>
+        </div>
+    </div>
+</div>
+
+<div class="score-badge">Score: <span id="total-score-val">0</span></div>
+
+<script src="app.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

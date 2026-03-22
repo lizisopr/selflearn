@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="jurnal.html">Journal</a>
+            <a href="tasks.html">Tasks</a>
+            <a href="notes.html">Notes</a>
+            <a href="memory.html">Memory Games</a>
+            <a href="score.html">Score</a>
+        </nav>
+    </header>
+
+<div class="container">
+    <h1>Your Learning Path</h1>
+    <p>Track your progress from Beginner to JS Master.</p>
+
+    <div class="card">
+        <div class="roadmap-item">
+            <h3>Current Level: <span id="user-level">Beginner</span></h3>
+            <div class="progress-container">
+                <div id="main-progress-bar" class="progress-bar"></div>
+            </div>
+            <p id="xp-remaining">Loading XP...</p>
+        </div>
+    </div>
+
+    <div id="roadmap-steps">
+        <div class="card step" id="step-notes">
+            <h4>1. Theory & Concepts</h4>
+            <p>Read all notes and click 'Understand'.</p>
+            <span class="status-tag">Incomplete</span>
+        </div>
+        
+        <div class="card step" id="step-tasks">
+            <h4>2. Practical Challenges</h4>
+            <p>Solve all tasks in the Exercises page.</p>
+            <span class="status-tag">Incomplete</span>
+        </div>
+
+        <div class="card step" id="step-memory">
+            <h4>3. Logic & Recall</h4>
+            <p>Finish the Memory Quiz with zero errors.</p>
+            <span class="status-tag">Incomplete</span>
+        </div>
+    </div>
+</div>
+
+<div class="score-badge">Score: <span id="total-score-val">0</span></div>
+
+<script src="app.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
